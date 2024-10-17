@@ -1,0 +1,423 @@
+/* General Body Styling */
+body {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #0AAAC7;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #333;
+    display: flex;
+    align-items: baseline;
+}
+
+h2 .tip-number {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+/* Section Styling */
+section {
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+    transform: rotate(-2deg);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease;
+    text-align: left;
+    border: 2px dashed white;
+}
+
+section:hover {
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Different Section Background Colors */
+section:nth-of-type(1) {
+    background: #a8e6cf; /* Green */
+}
+
+section:nth-of-type(2) {
+    background: #d3e5ff; /* Light Blue */
+}
+
+section:nth-of-type(3) {
+    background: #ffd3b6; /* Orange */
+}
+
+section:nth-of-type(4) {
+    background: #d1c4e9; /* Purple */
+}
+
+section:nth-of-type(5) {
+    background: #d3e5ff; /* Light Blue */
+}
+
+section:nth-of-type(6) {
+    background: #ffd3b6; /* Orange */
+}
+
+.gallery-2 .image-container {
+    display: inline-block; /* Para que las imágenes se alineen una al lado de la otra */
+    text-align: center; /* Centra la descripción debajo de la imagen */
+    margin: 10px; /* Espacio entre las imágenes */
+}
+
+.gallery-2 .image-container img {
+    width: 200px; /* Ajusta el ancho según lo que necesites */
+    height: 200px; /* Ajusta la altura también */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor sin distorsionarse */
+}
+
+.gallery-2 .image-description {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.festivities-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* styles.css */
+.tip-item {
+    display: none; /* Ocultar todos los consejos por defecto */
+}
+.tip-item.active {
+    display: block; /* Mostrar solo el activo */
+}
+.arrow {
+    cursor: pointer;
+}
+
+/* Gallery Container */
+.tip-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Arrow Styles */
+.arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #0AAAC7;
+    margin: 0 20px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #005f73;
+}
+
+/* Tip Section */
+.tip-item {
+    display: none; /* Hide all tips by default */
+    flex: 1; /* Make them flexible in width */
+    max-width: 800px; /* Limit width for each tip */
+    transition: opacity 0.5s ease;
+}
+
+.tip-item.active {
+    display: block; /* Show the active tip */
+    opacity: 1; /* Smooth fade-in */
+}
+
+
+/* First Card (Carousel and Links) */
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-image {
+    flex: 1;
+    min-width: 250px;
+    margin-right: 20px;
+}
+
+.carousel-image {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.carousel-image.active {
+    display: block;
+}
+
+/* Useful Links Styling */
+.useful-links {
+    flex: 1;
+    min-width: 250px;
+    margin-top: 10px;
+}
+
+.useful-links h3 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.useful-links ul {
+    padding: 0;
+    list-style: none;
+}
+
+.useful-links ul li {
+    margin-bottom: 10px;
+}
+
+.useful-links ul li a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.useful-links ul li a:hover {
+    color: #0AAAC7;
+    text-decoration: underline;
+}
+
+/* Link Styling */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Navigation Dots */
+.nav-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-dots .dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-dots .dot.active,
+.nav-dots .dot:hover {
+    background-color: #0AAAC7;
+}
+
+/* Footer Styling */
+.footer-content {
+    background-color: rgb(31, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 50px;
+}
+
+.footer-left img {
+    margin-bottom: 10px;
+    max-width: 100px;
+}
+
+.footer-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.footer-links li {
+    margin-left: 20px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #0AAAC7;
+}
+
+/* Footer Social Media Styling */
+.social-media {
+    margin: 0;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media ul li {
+    margin: 0 10px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0AAAC7;
+    border-color: #0AAAC7;
+}
+
+/* Image Container */
+.image-container {
+    position: relative; /* Position relative to contain the absolute description */
+    margin: 10px; /* Space between images */
+}
+
+/* Image Description */
+.image-description {
+    position: absolute; /* Position absolute for hover effect */
+    bottom: 10px; /* Place at the bottom */
+    left: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    padding: 5px; /* Padding for better visibility */
+    border-radius: 5px; /* Rounded corners */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Show description on hover */
+.image-container:hover .image-description {
+    opacity: 1; /* Show on hover */
+}
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 600px) {
+    .card-content {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-center {
+        margin-top: 20px;
+    }
+
+    .footer-right {
+        margin-top: 20px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+}
