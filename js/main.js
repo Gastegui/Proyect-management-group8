@@ -5,7 +5,7 @@ window.onload = function() {
 };
 
 function loadHeader() {
-    fetch('header.html')
+    fetch('static/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
@@ -13,7 +13,7 @@ function loadHeader() {
 }
 
 function loadFooter() {
-    fetch('footer.html')
+    fetch('static/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
