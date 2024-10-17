@@ -374,19 +374,29 @@ a:hover {
 .image-container {
     position: relative; /* Position relative to contain the absolute description */
     margin: 10px; /* Space between images */
+    overflow: hidden; /* Para ocultar cualquier parte de la imagen que exceda el contenedor */
+}
+
+.image-container img {
+    width: auto; /* Ajusta el ancho según lo que necesites */
+    height: 200px; /* Ajusta la altura también */
+    object-fit: cover; /* Asegura que la imagen se ajuste dentro del contenedor sin distorsionarse */
 }
 
 /* Image Description */
 .image-description {
     position: absolute; /* Position absolute for hover effect */
     bottom: 10px; /* Place at the bottom */
-    left: 0;
+    left: 50%;
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
     color: white; /* Text color */
     padding: 5px; /* Padding for better visibility */
     border-radius: 5px; /* Rounded corners */
     opacity: 0; /* Start invisible */
     transition: opacity 0.3s ease; /* Smooth transition */
+    text-align: center; /* Center the text */
+    transform: translateX(-50%); /* Ajusta la posición para centrarlo */
+    width: 90%; /* Make the description take full width */
 }
 
 /* Show description on hover */
